@@ -8,6 +8,11 @@ namespace MediatorHarkka
 {
     class JobChangedEventArgs : EventArgs
     {
-        public Job job {get; set;}
+        public Job Job;
+
+        public JobChangedEventArgs(Job job)
+        {
+            Job = job;
+        }
     }
 }

@@ -10,6 +10,7 @@ namespace MediatorHarkka
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
