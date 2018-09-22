@@ -9,7 +9,7 @@ namespace MediatorHarkka
     class Mediator
     {
         private static Mediator instance = new Mediator();
-        static Mediator Instance => instance;
+        public static Mediator Instance => instance;
 
         private Mediator() { }
 

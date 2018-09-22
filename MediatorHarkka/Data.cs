@@ -12,7 +12,7 @@ namespace MediatorHarkka
             new Job { Id = 1, Title = "Siiven C luokkien ylläpito",
                     StartDate = DateTime.Today, EndDate = DateTime.Today.AddDays(1) },
             new Job { Id = 2, Title = "Parkkialueiden maalaus",
-                    StartDate = DateTime.Today.AddDays(‐5), EndDate = DateTime.Today.AddDays(5) },
+                    StartDate = DateTime.Today.AddDays(-5), EndDate = DateTime.Today.AddDays(5) },
             new Job { Id = 3, Title = "Puiden istutus",
                     StartDate = DateTime.Today.AddDays(4), EndDate = DateTime.Today.AddDays(10) },
             new Job { Id = 4, Title = "Väliseinän rakentaminen",

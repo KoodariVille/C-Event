@@ -13,11 +13,11 @@ namespace MediatorHarkka
         int Column { get; set; }
         int Width {get; set;}
         int Row { get; set; }
-        int Height { get; set; }
-        ConsoleColor BackColor { get; set; }
-        ConsoleColor TextColor { get; set; }
+        public int Height { get; set; }
+        public ConsoleColor BackColor { get; set; }
+        public ConsoleColor TextColor { get; set; }
 
-        ConsoleControl(int column, int width, int row, int height)
+        public ConsoleControl(int column, int width, int row, int height)
         {
             Column = column;
             Width = width;
@@ -52,7 +52,7 @@ namespace MediatorHarkka
             BackgroundColor = BackColor;
             for (int i = 0; i < Height; i++)
             {
-                SetCursorPosition(Column ‐ 1, Row ‐ 1 + i);
+                SetCursorPosition(Column - 1, Row - 1 + i);
                 if (Items != null && i < Items.Count)
                 {
                     Write(Items[i].PadRight(Width, ' '));

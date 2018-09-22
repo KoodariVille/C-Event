@@ -1,0 +1,7 @@
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\obj\Debug\MediatorHarkka.csprojResolveAssemblyReference.cache
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\obj\Debug\MediatorHarkka.csproj.CoreCompileInputs.cache
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\bin\Debug\MediatorHarkka.exe.config
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\bin\Debug\MediatorHarkka.exe
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\bin\Debug\MediatorHarkka.pdb
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\obj\Debug\MediatorHarkka.exe
+D:\OmatOhjelmoinnit\C-Event\MediatorHarkka\obj\Debug\MediatorHarkka.pdb
