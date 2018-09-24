@@ -84,7 +84,8 @@ namespace MediatorHarkka
             JobDetails.TextColor = ConsoleColor.DarkGreen;
             JobEmployees.TextColor = ConsoleColor.DarkRed;
 
-            BindMenuData(Data.jobs);         
+            BindMenuData(Data.jobs);
+            Mediator.Instance.JobChanged += Metodi;
         }
 
         private static void Metodi(object sender, JobChangedEventArgs e)
