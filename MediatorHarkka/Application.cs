@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Console;
+using System.Windows.Forms;
 
 namespace MediatorHarkka
 {
@@ -64,10 +65,14 @@ namespace MediatorHarkka
             }
 
             foreach (Employee e in Data.employees){
-                if (e.Id == job.Id)
+
+                foreach(Job j in e.Jobs)
                 {
-                    JobEmployees.Items.Add(e.Name);
-                }
+                    if (e.Id == j.Id)
+                    {
+                        JobEmployees.Items.Add(e.Name);
+                    }
+                }            
             }
         }
 
@@ -75,7 +80,7 @@ namespace MediatorHarkka
         {
             JobMenu = new ConsoleControl(1,System.Console.WindowWidth - 1,2,Data.jobs.Count());
             JobDetails = new ConsoleControl((System.Console.WindowWidth / 2) + 1, (System.Console.WindowWidth / 2) - 1,2,5);
-            JobEmployees = new ConsoleControl((System.Console.WindowWidth / 2) + 1, (System.Console.WindowWidth / 2) - 1, JobDetails.Height + 3 ,System.Console.WindowHeight - JobDetails.Height - 1);
+            JobEmployees = new ConsoleControl((System.Console.WindowWidth / 2) + 1, (System.Console.WindowWidth / 2) - 1, JobDetails.Height + 3 ,System.Console.WindowHeight / 2 - JobDetails.Height - 1);
 
             JobMenu.BackColor = ConsoleColor.Gray;
             JobDetails.BackColor = ConsoleColor.Gray;
@@ -123,8 +128,7 @@ namespace MediatorHarkka
                 if(inp < 0 || inp > JobMenu.Items.Count())
                 {
                     System.Console.SetCursorPosition(0, 0);
-                    WriteLine("Virhe");
-                    ReadLine();
+                    MessageBox.Show("Virheellinen syöte!");                
                 }
                 else
                 {
